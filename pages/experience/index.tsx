@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-export default function Background() {
+export default function Experience() {
   return (
     <>
       <Head>
