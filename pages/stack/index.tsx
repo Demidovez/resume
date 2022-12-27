@@ -1,6 +1,7 @@
-import { GetServerSideProps } from "next";
-import Head from "next/head";
-import { ISkill } from "../../types";
+import { GetServerSideProps } from 'next';
+import Head from 'next/head';
+
+import { ISkill } from '../../types';
 
 interface IProps {
   stack: ISkill[];
@@ -21,8 +22,8 @@ export default function Stack({ stack }: IProps) {
         {stack.map((skill) => (
           <div key={skill.label}>
             - {skill.label}
-            {`${skill.staples ? " (" + skill.staples + ")" : ""}`}
-            {`${skill.description ? " - " + skill.description : ""}`}
+            {`${skill.staples ? ' (' + skill.staples + ')' : ''}`}
+            {`${skill.description ? ' - ' + skill.description : ''}`}
           </div>
         ))}
       </main>
@@ -33,69 +34,69 @@ export default function Stack({ stack }: IProps) {
 export const getServerSideProps = (context: GetServerSideProps) => {
   const stack: ISkill[] = [
     {
-      label: "Next.js",
-      staples: "React.js",
-      description: "",
+      label: 'Next.js',
+      staples: 'React.js',
+      description: '',
     },
     {
-      label: "TypeScript",
-      staples: "",
-      description: "",
+      label: 'TypeScript',
+      staples: '',
+      description: '',
     },
     {
-      label: "Авторизация",
-      staples: "JWT",
-      description: "",
+      label: 'Авторизация',
+      staples: 'JWT',
+      description: '',
     },
     {
-      label: "Тестирование",
-      staples: "Jest, react-testting-library",
-      description: "",
+      label: 'Тестирование',
+      staples: 'Jest, react-testting-library',
+      description: '',
     },
     {
-      label: "Вебсокеты",
-      staples: "",
-      description: "",
+      label: 'Вебсокеты',
+      staples: '',
+      description: '',
     },
     {
-      label: "Docker",
-      staples: "Docker-Compose",
-      description: "",
+      label: 'Docker',
+      staples: 'Docker-Compose',
+      description: '',
     },
     {
-      label: "Redux",
-      staples: "RTK",
-      description: "",
+      label: 'Redux',
+      staples: 'RTK',
+      description: '',
     },
     {
-      label: "React Query",
-      staples: "",
-      description: "",
+      label: 'React Query',
+      staples: '',
+      description: '',
     },
     {
-      label: "ESLint",
-      staples: "",
-      description: "",
+      label: 'ESLint',
+      staples: '',
+      description: '',
     },
     {
-      label: "React hook form",
-      staples: "c Yup",
-      description: "",
+      label: 'React hook form',
+      staples: 'c Yup',
+      description: '',
     },
     {
-      label: "SCSS",
-      staples: "CSS modules",
-      description: "",
+      label: 'SCSS',
+      staples: 'CSS modules',
+      description: '',
     },
     {
-      label: "Nest.js",
-      staples: "Node.js",
-      description: "серверная часть",
+      label: 'Nest.js',
+      staples: 'Node.js',
+      description: 'серверная часть',
     },
     {
-      label: "MongoDB",
-      staples: "Mongoose",
-      description: "серверная часть",
+      label: 'MongoDB',
+      staples: 'Mongoose',
+      description: 'серверная часть',
     },
   ];
 

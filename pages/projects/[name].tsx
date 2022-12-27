@@ -1,4 +1,4 @@
-import { GetServerSideProps, GetStaticProps } from "next";
+import { GetServerSideProps, GetStaticProps } from 'next';
 
 interface IProps {
   name: string;

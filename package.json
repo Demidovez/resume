@@ -6,15 +6,19 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint \"{components,layouts,pages,theme}/**/*.{js,ts,tsx}\" --fix"
   },
   "dependencies": {
     "@next/font": "13.1.1",
     "@types/node": "18.11.18",
     "@types/react": "18.0.26",
     "@types/react-dom": "18.0.10",
+    "@typescript-eslint/eslint-plugin": "5.47.1",
     "eslint": "8.30.0",
-    "eslint-config-next": "13.1.1",
+    "eslint-config-next": "13.0.7",
+    "eslint-plugin-react": "7.31.11",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "eslint-plugin-simple-import-sort": "8.0.0",
     "next": "13.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
