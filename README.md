@@ -13,6 +13,8 @@
 - ESLint
 - React hook form (c Yup)
 - SCSS (CSS modules)
+- Nest.js (серверная часть)
+- MongoDB (Mongoose)
 
 ## Особенности
 
@@ -22,6 +24,7 @@
 - Скачивание резюме в PDF
 - Чат со мной
 - Сайт работает в контейнере Docker
+- Серверная часть на базе Nest.js (Node.js) в контейнере Docker
 - Дизайн сайта сообственный
 
 ## Зачем?
