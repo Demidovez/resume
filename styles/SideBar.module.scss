@@ -1,5 +1,22 @@
 .container {
   max-width: var(--max-width-sidebar);
   width: 100%;
-  // background-color: red;
+
+  .avatar {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    font-size: 0;
+    width: 250px;
+    height: 250px;
+    filter: drop-shadow(5px 10px 10px rgba(155, 155, 155, 0.3));
+
+    & > img {
+      clip-path: url(#svgClipAvatar);
+    }
+    
+    .indicator {
+      position: absolute;
+    }
+  }
 }
