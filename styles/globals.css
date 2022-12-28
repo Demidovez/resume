@@ -3,9 +3,58 @@
   --max-width-sidebar: 200px;
   --border-radius: 10px;
   --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+
+  --color-primary: #4458dc
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../assets/fonts/Rubik-Light.ttf');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../assets/fonts/Rubik-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../assets/fonts/Rubik-Medium.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../assets/fonts/Rubik-SemiBold.ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../assets/fonts/Rubik-Bold.ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../assets/fonts/Rubik-ExtraBold.ttf');
+  font-weight: 800;
+  
 }
 
 body {
   margin: 0;
-  background-color: #f0f3fa;
+  background-color: white;
+  font-family: 'Rubik', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }

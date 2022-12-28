@@ -10,14 +10,15 @@ interface IProps {
 const Layout = ({ children }: IProps) => {
   return (
     <div className={styles.container}>
-      <SideBar />
-      <div className={styles.content}>
-        <Header />
-        <div className={styles.page}>
-          { children }
+      <Header />
+      <main>
+        <SideBar />
+        <div className={styles.content}>
+          <div className={styles.page}>
+            { children }
+          </div>
         </div>
-        
-      </div>
+      </main>
     </div>
   );
 };
