@@ -3,11 +3,12 @@
   flex-direction: column;
   min-height: 100vh;
 
-  main {
+  & > main {
     max-width: var(--max-width-app);
     width: 100%;
     margin: 0 auto;
     flex: 1;
+    display: flex;
 
     .content {
       flex: 1;
@@ -16,11 +17,8 @@
       margin: 20px 0;
       
       .page {
-        // background-color: white;
-        // box-shadow: var(--shadow);
-        padding: 20px;
+        padding: 20px 20px 20px 70px;
         border-radius: var(--border-radius);
-        margin-top: 20px;
         flex: 1;
       }
     }

@@ -1,6 +1,17 @@
 .container {
   max-width: var(--max-width-sidebar);
   width: 100%;
+  position: relative;
+
+  .blob {
+    width: 700px;
+    position: absolute;
+    left: -120px;
+    top: -120px;
+    opacity: 1;
+    z-index: -1;
+    fill: #f3eefd;
+  }
 
   .avatar {
     overflow: hidden;
@@ -17,6 +28,50 @@
     
     .indicator {
       position: absolute;
+    }
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    
+    & > a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.3s;
+
+      span {
+        opacity: 0.7;
+        font-size: 14px;
+      }
+
+      &:hover {
+        color: var(--color-primary);
+      }
+    }
+  }
+
+  .ask_me{
+    border: none;
+    border-radius: 10px;
+    background-color: blue;
+    padding: 10px 20px;
+    display: block;
+    margin: 0 auto;
+    color: white;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #854fee 0%, #4458dc 100%), radial-gradient(circle at top left, #854fee, #4458dc );
+    box-shadow: 0px 10px 30px rgb(118 85 225 / 30%);
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 12px;
+
+    &:hover {
+      background: black;
     }
   }
 }

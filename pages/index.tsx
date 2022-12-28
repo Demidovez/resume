@@ -12,8 +12,15 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <p>dddd</p>
+      <main className={styles.container}>
+        <div className={styles.introduce}>
+          <div>
+            <div className={styles.preffix}>Привет! Меня зовут</div>
+            <h1>Николай Демидовец!</h1>
+            <h3>И я React.js - разработчик</h3>
+          </div>
+          <button>Скачать резюме в PDF</button>
+        </div>
       </main>
     </>
   );
