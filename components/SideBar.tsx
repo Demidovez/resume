@@ -1,8 +1,11 @@
+import { HiOutlineMail } from 'react-icons/hi';
+import { TbBrandGithub, TbBrandTelegram } from 'react-icons/tb';
+
 import BlobClipAvatar from './BlobClipAvatar';
+import Skills from './Skills';
+
 import Blob from '../assets/svg/blob.svg';
 import styles from '../styles/SideBar.module.scss';
-import { HiOutlineMail } from "react-icons/hi";
-import { TbBrandTelegram, TbBrandGithub } from "react-icons/tb";
 
 
 const SideBar = () => {
@@ -23,6 +26,7 @@ const SideBar = () => {
         <a href="https://github.com/Demidovez" target="_blank"><TbBrandGithub size="1.8rem"/><span>github.com/Demidovez</span></a>
       </div>
       <button className={styles.ask_me}>Задать вопрос</button>
+      <Skills />
     </div>
   );
 };

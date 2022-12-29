@@ -4,7 +4,9 @@
   --border-radius: 10px;
   --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 
-  --color-primary: #4458dc
+  --color-primary: #4458dc;
+  --gradient-primary: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
+  --gradient-secondary: linear-gradient(to right, #854fee 0%, #4458dc 100%), radial-gradient(circle at top left, #854fee, #4458dc );
 }
 
 @font-face {
