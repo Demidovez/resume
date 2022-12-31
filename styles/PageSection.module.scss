@@ -1,0 +1,38 @@
+.container {
+  margin-top: 40px;
+
+  .header {
+    margin-bottom: 20px;
+
+    h3 {
+      font-size: 22px;
+      margin: 0;
+      transition: all 0.2s;
+
+      &:hover {
+        color: var(--color-primary);
+      }
+    }
+  }
+
+  .more {
+    transition: all 0.3s;
+    display: inline-block;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 7px;
+    text-transform: lowercase;
+    font-weight: 200;
+    color: rgb(72, 72, 72);
+    background-color: var(--color-primary);
+    background-image: var(--gradient-secondary);
+    color: white;
+
+    &:hover {
+      color: white;
+      background: black;
+      border-color: black;
+    }
+  }
+}
+

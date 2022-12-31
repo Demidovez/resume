@@ -32,14 +32,16 @@ const PAGES = [
 ];
 
 const Header = () => {
-  return <div className={styles.container}>
-    <div className={styles.links}>{PAGES.map(page => <div key={page.link} className={styles.page}><Link  href={page.link}>{page.label}</Link></div>)}</div>
-    <div className={styles.settings}>
-      <div className={styles.nigth}><ThemeToggle /></div>
-      <div className={styles.lang}><span>en</span></div>
-      <div className={styles.login}><span>войти</span></div>
+  return (
+    <div className={styles.container}>
+      <div className={styles.links}>{PAGES.map(page => <div key={page.link} className={styles.page}><Link  href={page.link}>{page.label}</Link></div>)}</div>
+      <div className={styles.settings}>
+        <div className={styles.nigth}><ThemeToggle /></div>
+        <div className={styles.lang}><span>en</span></div>
+        <div className={styles.login}><span>войти</span></div>
+      </div>
     </div>
-  </div>;
+  );
 };
 
 export default Header;

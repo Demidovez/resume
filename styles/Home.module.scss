@@ -27,7 +27,7 @@
     button {
       border: none;
       border-radius: 10px;
-      background-color: blue;
+      background-color: var(--color-primary);
       padding: 20px 30px;
       color: white;
       text-transform: uppercase;
@@ -43,5 +43,30 @@
     }
   }
 
+  .about_me {
+    color: rgb(69, 69, 69);
+    line-height: 23px;
+  }
   
+  p {
+    color: rgb(69, 69, 69);
+    line-height: 22px;
+
+    span, a {
+      font-weight: 500;
+      color: black;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  ul {
+    color: rgb(69, 69, 69);
+
+    li {
+      line-height: 22px;
+    }
+  }
 }

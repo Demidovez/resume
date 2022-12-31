@@ -17,7 +17,8 @@ const SideBar = () => {
           src="/images/avatar.jpg" 
           width={250}
           height={250} 
-          alt="Фото Николай Демидовец"/>
+          alt="Фото Николай Демидовец"
+        />
         <div className={styles.indicator} />
       </div>
       <div className={styles.contacts}>

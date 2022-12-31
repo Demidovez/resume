@@ -41,12 +41,20 @@ const SKILLS: ISkill[] = [
     level: 50,
   },
   {
+    label: 'SQL',
+    level: 40,
+  },
+  {
     label: 'Git',
     level: 50,
   },
   {
     label: 'Тестирование',
     level: 40,
+  },
+  {
+    label: 'Английский',
+    level: 35,
   },
 ];
 
