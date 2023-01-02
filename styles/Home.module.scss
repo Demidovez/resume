@@ -1,10 +1,11 @@
 .container {
-  margin-top: -20px;
+  --text-color: rgb(109, 109, 109);
 
   .introduce {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin-top: 20px;
 
     .preffix {
       font-size: 20px;
@@ -44,12 +45,13 @@
   }
 
   .about_me {
-    color: rgb(69, 69, 69);
+    color: var(--text-color);
     line-height: 23px;
+    margin-bottom: 60px;
   }
   
   p {
-    color: rgb(69, 69, 69);
+    color: var(--text-color);
     line-height: 22px;
 
     span, a {
@@ -63,7 +65,7 @@
   }
 
   ul {
-    color: rgb(69, 69, 69);
+    color: var(--text-color);
 
     li {
       line-height: 22px;

@@ -119,6 +119,7 @@ module.exports = {
     ],
     '@typescript-eslint/camelcase': 0,
     '@typescript-eslint/no-empty-function': 0,
+    "@typescript-eslint/space-infix-ops": 1,
     '@typescript-eslint/member-delimiter-style': [
       1,
       {
